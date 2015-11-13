@@ -8,7 +8,7 @@ var path = require('path');
 module.exports = {
     context: APP,
     entry: {
-        app:  ['webpack/hot/dev-server', './src/app/app.ts']
+        app:  ['webpack/hot/dev-server', './src/app/bootstrap.ts']
     },
     output: {
         path: APP,
@@ -16,39 +16,39 @@ module.exports = {
     },
     module: {
         loaders: [
-            {
-                test: /\.scss$/,
-                loader: "style-loader!css-loader!sass-loader?"
-            },
+            //{
+            //    test: /\.scss$/,
+            //    loader: "style-loader!css-loader!sass-loader?"
+            //},
             {
                 test: /\.js$/,
-                loader: 'ng-annotate!babel!jshint',
+                loader: 'jshint',
                 exclude: /node_module|bower_components/
             },
             {
                 test: /\.ts$/,
                 loader: "ts-loader"
             },
-            {
-                test: /\.css$/,
-                loader: "style-loader!css-loader"
-            },
-            {
-                test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: "url-loader?name=build/assets/[name].[ext]&limit=10000&minetype=application/font-woff"
-            },
-            {
-                test: /\.(ttf|eot|svg)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: "file-loader?name=build/assets/[name].[ext]"
-            },
-            {
-                test: /\.(jpg|png)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: 'file-loader?name=build/assets/[name].[ext]'
-            },
-            {
-                test: /\.ico$/,
-                loader: 'url-loader?mimetype=image/ico'
-            },
+            //{
+            //    test: /\.css$/,
+            //    loader: "style-loader!css-loader"
+            //},
+            //{
+            //    test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+            //    loader: "url-loader?name=build/assets/[name].[ext]&limit=10000&minetype=application/font-woff"
+            //},
+            //{
+            //    test: /\.(ttf|eot|svg)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+            //    loader: "file-loader?name=build/assets/[name].[ext]"
+            //},
+            //{
+            //    test: /\.(jpg|png)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+            //    loader: 'file-loader?name=build/assets/[name].[ext]'
+            //},
+            //{
+            //    test: /\.ico$/,
+            //    loader: 'url-loader?mimetype=image/ico'
+            //},
             {
                 test: /\.json/,
                 loader: 'json'
