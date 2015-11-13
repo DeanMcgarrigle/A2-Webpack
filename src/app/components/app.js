@@ -17,7 +17,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         angular2_1.Component({
             selector: 'app',
-            template: '<h1>Dashboard </h1>'
+            templateUrl: './app/templates/app.html'
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

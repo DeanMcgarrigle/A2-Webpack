@@ -16,10 +16,10 @@ module.exports = {
     },
     module: {
         loaders: [
-            //{
-            //    test: /\.scss$/,
-            //    loader: "style-loader!css-loader!sass-loader?"
-            //},
+            {
+                test: /\.scss$/,
+                loader: "style-loader!css-loader!sass-loader?"
+            },
             {
                 test: /\.js$/,
                 loader: 'babel',
@@ -29,10 +29,10 @@ module.exports = {
                 test: /\.ts$/,
                 loader: "ts-loader"
             },
-            //{
-            //    test: /\.css$/,
-            //    loader: "style-loader!css-loader"
-            //},
+            {
+                test: /\.css$/,
+                loader: "style-loader!css-loader"
+            },
             //{
             //    test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
             //    loader: "url-loader?name=build/assets/[name].[ext]&limit=10000&minetype=application/font-woff"
