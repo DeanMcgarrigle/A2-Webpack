@@ -1,7 +1,7 @@
 'use strict';
 var webpack = require('webpack'),
     APP = __dirname;
-var dev = false;
+var dev = true;
 var path = require('path');
 
 
@@ -69,7 +69,7 @@ module.exports = {
         [
             //   new webpack.HotModuleReplacementPlugin(),
             new webpack.optimize.UglifyJsPlugin({
-                minimize: true,
+                minimize: false,
                 mangle: false,
                 compress: {
                     warnings: false
