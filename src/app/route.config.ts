@@ -6,6 +6,5 @@ export var Routes = {
 };
 
 export const APP_ROUTES = [
-	this.Routes.home
-
+	Routes.home
 ];

@@ -4,6 +4,6 @@ exports.Routes = {
     home: new router_1.Route({ path: '/', component: home_1.HomeComponent })
 };
 exports.APP_ROUTES = [
-    this.Routes.home
+    exports.Routes.home
 ];
 //# sourceMappingURL=route.config.js.map
