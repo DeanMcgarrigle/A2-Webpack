@@ -10,18 +10,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var angular2_1 = require('angular2/angular2');
-var AppComponent = (function () {
-    function AppComponent() {
+var HomeComponent = (function () {
+    function HomeComponent() {
     }
-    AppComponent.prototype.go = function () { };
-    AppComponent = __decorate([
+    HomeComponent.prototype.go = function () { };
+    HomeComponent = __decorate([
         angular2_1.Component({
-            selector: 'app',
-            templateUrl: './app/templates/app.html'
+            selector: 'home',
+            templateUrl: './../templates/home.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], HomeComponent);
+    return HomeComponent;
 })();
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.js.map
+exports.HomeComponent = HomeComponent;
+//# sourceMappingURL=home.js.map
