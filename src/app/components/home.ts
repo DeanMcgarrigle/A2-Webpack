@@ -4,7 +4,7 @@ import {Routes} from './../route.config';
 
 @Component({
     selector: 'home',
-    templateUrl: './../templates/home.html'
+    templateUrl: './app/templates/home.html'
 })
 
 export class HomeComponent { go() {} }
