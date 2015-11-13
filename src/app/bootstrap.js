@@ -1,4 +1,5 @@
 require('../styles.scss');
+require('reflect-metadata');
 var angular2_1 = require('angular2/angular2');
 var http_1 = require('angular2/http');
 var router_1 = require('angular2/router');
