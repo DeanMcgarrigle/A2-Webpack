@@ -22,7 +22,7 @@ module.exports = {
             //},
             {
                 test: /\.js$/,
-                loader: 'jshint',
+                loader: 'babel',
                 exclude: /node_module|bower_components/
             },
             {
@@ -68,7 +68,13 @@ module.exports = {
     plugins: !dev ?
         [
             //   new webpack.HotModuleReplacementPlugin(),
-            new webpack.optimize.UglifyJsPlugin({minimize: true, mangle: false})
+            new webpack.optimize.UglifyJsPlugin({
+                minimize: true,
+                mangle: false,
+                compress: {
+                    warnings: false
+                }
+            })
         ] :
         [
             new webpack.HotModuleReplacementPlugin()
