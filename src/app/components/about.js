@@ -12,12 +12,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var angular2_1 = require('angular2/angular2');
 var AboutComponent = (function () {
     function AboutComponent() {
+        console.log("About Page Loaded");
     }
-    AboutComponent.prototype.go = function () { };
     AboutComponent = __decorate([
         angular2_1.Component({
             selector: 'about',
-            templateUrl: './app/templates/about.html'
+            templateUrl: './app/templates/about.html',
+            directives: [angular2_1.CORE_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [])
     ], AboutComponent);
