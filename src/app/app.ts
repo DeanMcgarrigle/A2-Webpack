@@ -1,6 +1,7 @@
 import {Component, View} from 'angular2/angular2';
 import {RouteConfig, RouterOutlet, RouterLink} from 'angular2/router';
 import {Routes, APP_ROUTES} from './route.config';
+
 @Component({
     selector: 'app'
 })
