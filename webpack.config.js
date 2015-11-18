@@ -67,7 +67,7 @@ module.exports = {
     },
     plugins: !dev ?
         [
-            //   new webpack.HotModuleReplacementPlugin(),
+            //new webpack.HotModuleReplacementPlugin(),
             new webpack.optimize.UglifyJsPlugin({
                 minimize: false,
                 mangle: false,

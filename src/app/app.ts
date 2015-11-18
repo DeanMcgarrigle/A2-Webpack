@@ -16,4 +16,3 @@ export class AppComponent {
     public title = 'Test App';
     public routes = Routes;
 }
-

@@ -1,16 +1,18 @@
-import {Component, CORE_DIRECTIVES} from 'angular2/angular2';
-import {Router, RouterLink} from 'angular2/router'
+import {Component,View} from 'angular2/angular2';
 
 @Component({
-    selector: 'home',
-    templateUrl: './app/templates/home.html',
-    directives: [CORE_DIRECTIVES, RouterLink]
+    selector: 'home'
 })
 
-export class HomeComponent {
+@View({
+    templateUrl: './app/templates/home.html',
+})
+
+export class HomeComponent{
+
+    public text:string = 'bob';
 
     constructor() {
-        console.log("Home Page Loaded");
-    }
 
+    }
 }

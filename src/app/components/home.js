@@ -10,16 +10,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var angular2_1 = require('angular2/angular2');
-var router_1 = require('angular2/router');
 var HomeComponent = (function () {
     function HomeComponent() {
-        console.log("Home Page Loaded");
+        this.text = 'bob';
     }
     HomeComponent = __decorate([
         angular2_1.Component({
-            selector: 'home',
+            selector: 'home'
+        }),
+        angular2_1.View({
             templateUrl: './app/templates/home.html',
-            directives: [angular2_1.CORE_DIRECTIVES, router_1.RouterLink]
         }), 
         __metadata('design:paramtypes', [])
     ], HomeComponent);
