@@ -1,10 +1,7 @@
 import {Route} from 'angular2/router';
-<<<<<<< HEAD
 import {HomeComponent} from './components/home.ts';
-=======
-import {HomeComponent} from './components/home';
-import {AboutComponent} from './components/about';
->>>>>>> refs/remotes/DeanMcgarrigle/master
+import {AboutComponent} from './components/about.ts';
+
 
 export var Routes = {
   home: new Route({path: '/home', component: HomeComponent}),
