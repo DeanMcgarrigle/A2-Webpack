@@ -1,0 +1,18 @@
+<div class="pusher">
+
+    <div class="sidebar-nav">
+        <div class="ui visible sidebar inverted vertical menu">
+            <a [router-link]="['/Home']" class="item">
+                Home
+            </a>
+            <a [router-link]="['/About']" class="item">
+                About
+            </a>
+        </div>
+    </div>
+
+    <div id="main" class="main ui padded container">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>

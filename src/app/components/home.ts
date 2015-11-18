@@ -1,8 +1,18 @@
-import {Component} from 'angular2/angular2';
+import {Component,View} from 'angular2/angular2';
 
 @Component({
-    selector: 'home',
-    templateUrl: './app/templates/home.html'
+    selector: 'home'
 })
 
-export class HomeComponent { go() {} }
+@View({
+    templateUrl: './app/templates/home.html',
+})
+
+export class HomeComponent{
+
+    public text:string = 'bob';
+
+    constructor() {
+
+    }
+}
