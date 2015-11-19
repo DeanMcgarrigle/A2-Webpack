@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc": "tsc -p src -w"
+    "dev": "webpack-dev-server --inline --hot --content-base src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,8 @@
     "angular2": "2.0.0-alpha.46",
     "systemjs": "^0.19.5",
     "webpack": "1.12.4",
-    "webpack-dev-server": "1.12.1"
+    "webpack-dev-server": "1.12.1",
+    "semantic-ui-css": "^2.1.6"
   },
   "devDependencies": {
     "babel-core": "^5.8.22",

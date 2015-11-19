@@ -1,5 +1,5 @@
-import {HomeComponent} from './components/home';
-import {AboutComponent} from './components/about';
+import {HomeComponent} from './components/home.ts';
+import {AboutComponent} from './components/about.ts';
 import {Route, Router} from 'angular2/router';
 
 export var Routes = {

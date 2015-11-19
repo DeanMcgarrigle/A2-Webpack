@@ -1,18 +1,12 @@
 import {Component,View} from 'angular2/angular2';
 
 @Component({
-    selector: 'home'
-})
-
-@View({
-    templateUrl: './app/templates/home.html',
+    selector: 'home',
+    template: `<div>{{name}}</div>`
 })
 
 export class HomeComponent{
 
-    public text:string = 'bob';
+    name = 'Bob';
 
-    constructor() {
-
-    }
 }
